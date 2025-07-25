@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>    <link rel="stylesheet" href="styles.css">
+    <title>Hotel</title>
+</head>
+<body>
+    <header>
+        <div class="content flex_space">
+
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+            
+            <div class="navlinks">
+                <ul id="menulist">
+                    <i class="ri-menu-line" id="hide" onclick="hideMenu()"></i>
+                    <li><a href="index.html">Home</a></li>
+                    <li><div class="active_nav"><a href="rooms.html">Rooms</a></div></li>
+                    <li><a href="restaurant.html">Restaurant</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><i class="ri-search-line"></i></li>
+                    <li><button class="primary-btn"><a href="rooms.html">BOOK NOW</a> </button></li>
+                </ul>
+                <i class="ri-menu-line" id="show" onclick="showMenu()"></i>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        const navLinks = document.getElementsByClassName("menulist");
+        function showMenu(){
+            menulist.style.display = "block"
+            menulist.style.top = "0"
+        }
+        function hideMenu(){
+            menulist.style.display = "none"
+        }
+    </script>
+
+<!--<script>
+    const menulist = document.getElementById("menulist")
+    const show = document.getElementById("show")
+    const hide = document.getElementById("hide")
+
+    show.addEventListener('click', () => menulist.style.display = "block" , 
+    menulist.style.top = 0)
+    hide.addEventListener('click', () => menulist.style.display = "none")
+</script>-->
+
+<section class="section_container popular_container">
+    <h2 class="section_header">Our Rooms</h2>
+    <div class="popular_grid">
+        <div class="popular_card">
+            <div class="container">
+            <div class="wrapper">
+                <img src="images/menub.jpg">
+                <img src="images/extrab.jpg">
+                <img src="images/extrabb.jpg">
+                <img src="images/menub.jpg">
+            </div>
+            </div>
+            <div class="popular_content">
+                <div class="popular_card_header">
+                    <h4>The Presidential Suite</h4>
+                    <h4>$499</h4>
+                </div>
+                <p><ul class="lists">
+                    <li>A/C</li>
+                    <li>Wifi</li>
+                    <li>Spa</li>
+                    <li>Bath tub</li>
+                </ul></p>
+                <button class="room_btn">Book</button>
+            </div>
+        </div>
+        <div class="popular_card">
+            <img src="images/menub.jpg" alt="popular hotel"/>
+            <div class="popular_content">
+                <div class="popular_card_header">
+                    <h4>The Plaza Hotel</h4>
+                    <h4>$499</h4>
+                </div>
+                <p><ul class="lists">
+                    <li>A/C</li>
+                    <li>Wifi</li>
+                    <li>Spa</li>
+                    <li>Bath tub</li>
+                </ul></p>
+                <button class="room_btn">Book</button>
+            </div>
+        </div>
+        <div class="popular_card">
+            <img src="images/menub.jpg" alt="popular hotel"/>
+            <div class="popular_content">
+                <div class="popular_card_header">
+                    <h4>The Plaza Hotel</h4>
+                    <h4>$499</h4>
+                </div>
+                <p><ul class="lists">
+                    <li>A/C</li>
+                    <li>Wifi</li>
+                    <li>Spa</li>
+                    <li>Bath tub</li>
+                </ul></p>
+                <button class="room_btn">Book</button>
+            </div>
+        </div>
+        <div class="popular_card">
+            <img src="images/menub.jpg" alt="popular hotel"/>
+            <div class="popular_content">
+                <div class="popular_card_header">
+                    <h4>The Plaza Hotel</h4>
+                    <h4>$499</h4>
+                </div>
+                <p><ul class="lists">
+                    <li>A/C</li>
+                    <li>Wifi</li>
+                    <li>Spa</li>
+                    <li>Bath tub</li>
+                </ul></p>
+                <button class="room_btn">Book</button>
+            </div>
+        </div>
+        <div class="popular_card">
+            <img src="images/menub.jpg" alt="popular hotel"/>
+            <div class="popular_content">
+                <div class="popular_card_header">
+                    <h4>The Plaza Hotel</h4>
+                    <h4>$499</h4>
+                </div>
+                <p><ul class="lists">
+                    <li>A/C</li>
+                    <li>Wifi</li>
+                    <li>Spa</li>
+                    <li>Bath tub</li>
+                </ul></p>
+                <button class="room_btn">Book</button>
+            </div>
+        </div>
+        <div class="popular_card">
+            <img src="images/menub.jpg" alt="popular hotel"/>
+            <div class="popular_content">
+                <div class="popular_card_header">
+                    <h4>The Plaza Hotel</h4>
+                    <h4>$499</h4>
+                </div>
+                <p><ul class="lists">
+                    <li>A/C</li>
+                    <li>Wifi</li>
+                    <li>Spa</li>
+                    <li>Bath tub</li>
+                </ul></p>
+                <button class="room_btn">Book</button>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

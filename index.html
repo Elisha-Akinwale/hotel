@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>    <link rel="stylesheet" href="styles.css">
+    <title>Hotel</title>
+</head>
+<body>
+    <header>
+        <div class="content flex_space">
+
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+            
+            <div class="navlinks">
+                <ul id="menulist">
+                    <i class="ri-menu-line" onclick="hideMenu()"></i>
+                    <li><div class="active_nav"><a href="index.html">Home</a></div></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="restaurant.html">Restaurant</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><i class="ri-search-line"></i></li>
+                    <li><button class="primary-btn"><a href="rooms.html">BOOK NOW</a> </button></li>
+                </ul>
+                <i class="ri-menu-line" onclick="showMenu()"></i>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        var navLinks = document.getElementById("menulist");
+        function showMenu(){
+            menulist.style.display = "block"
+            menulist.style.top = "0"
+        }
+        function hideMenu(){
+            menulist.style.display = "none"
+        }
+    </script>
+
+<header class="section_container header_container">
+    <div class="header_image_container">
+        <div class="header_content">
+            <h1>Enoy your Vacation</h1>
+            <p>Make your reservations fast and easy</p>
+        </div>
+        <div class="booking_container">
+            <form name="booking" method="POST" data-netlify="true" class="max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md space-y-4">
+            <input type="hidden" name="form-name" value="booking">
+              
+                <div class="form_group">
+                    <div class="input_group">
+                        <input type="text">
+                        <label>Your Name</label>
+                    </div>
+                    <p>Guest Name</p>
+                </div>
+                <div class="form_group">
+                    <div class="input_group">
+                        <input type="date">
+                        <label></label>
+                    </div>
+                    <p>Check In</p>
+                </div>
+                <div class="form_group">
+                    <div class="input_group">
+                        <input type="date">
+                        <label></label>
+                    </div>
+                    <p>Check Out</p>
+                </div>
+                <div class="form_group">
+                    <div class="input_group">
+                        <input type="number" min="1">
+                        <label>Guests</label>
+                    </div>
+                    <p>Add guests</p>
+                </div>
+            </form>
+            <button class="btn"><a href="rooms.html"><i class="ri-search-line"></i></a></button>
+        </div>
+    </div>
+</header>
+
+<section class="section_container popular_container">
+    <h2 class="section_header"><a href="restaurant.html"> Our Rooms</a></h2>
+    <div class="popular_grid">
+        <div class="popular_card">
+            <img src="images/menub.jpg" alt="popular hotel"/>
+            <div class="popular_content">
+                <div class="popular_card_header">
+                    <h4>The Presidential Suite</h4>
+                    <h4>$499</h4>
+                </div>
+                <p>New York City, USA</p>
+            </div>
+        </div>
+        <div class="popular_card">
+            <img src="images/extrab.jpg" alt="popular hotel">
+            <div class="popular_content">
+                <div class="popular_card_header">
+                    <h4>The Plaza Hotel</h4>
+                    <h4>$499</h4>
+                </div>
+                <p>New York City, USA</p>
+            </div>
+        </div>
+        <div class="popular_card">
+            <img src="images/menub.jpg" alt="popular hotel">
+            <div class="popular_content">
+                <div class="popular_card_header">
+                    <h4>The Plaza Hotel</h4>
+                    <h4>$499</h4>
+                </div>
+                <p>New York City, USA</p>
+            </div>
+        </div>
+        <div class="popular_card">
+            <img src="images/menub.jpg" alt="popular hotel">
+            <div class="popular_content">
+                <div class="popular_card_header">
+                    <h4>The Plaza Hotel</h4>
+                    <h4>$499</h4>
+                </div>
+                <p>New York City, USA</p>
+            </div>
+        </div>
+        <div class="popular_card">
+            <img src="images/extrab.jpg" alt="popular hotel">
+            <div class="popular_content">
+                <div class="popular_card_header">
+                    <h4>The Plaza Hotel</h4>
+                    <h4>$499</h4>
+                </div>
+                <p>New York City, USA</p>
+            </div>
+        </div>
+        <div class="popular_card">
+            <img src="images/extrabb.jpg" alt="popular hotel">
+            <div class="popular_content">
+                <div class="popular_card_header">
+                    <h4>The Plaza Hotel</h4>
+                    <h4>$499</h4>
+                </div>
+                <p>New York City, USA</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="client">
+    <div class="section_container client_container">
+        <h2 class="section_header">What Our Visitors Say</h2>
+        <div class="client_grid">
+            <div class="client_card">
+                <img src="images/extrab.jpg" alt="client">
+                <p>
+                    I dcgvscx askdgcva skcgfiahs dcoasdcygaoshc osuycga clausycfasildc cslaiduc
+                    gysc dlsayudcfa lieudcscb suycv sclwqsuyc cusycv scscv 
+                </p>
+            </div>
+            <div class="client_card">
+                <img src="images/extrab.jpg" alt="client">
+                <p>
+                    I dcgvscx askdgcva skcgfiahs dcoasdcygaoshc osuycga clausycfasildc cslaiduc
+                    gysc dlsayudcfa lieudcscb suycv sclwqsuyc cusycv scscv 
+                </p>
+            </div>
+            <div class="client_card">
+                <img src="images/extrab.jpg" alt="client">
+                <p>
+                    I dcgvscx askdgcva skcgfiahs dcoasdcygaoshc osuycga clausycfasildc cslaiduc
+                    gysc dlsayudcfa lieudcscb suycv sclwqsuyc cusycv scscv 
+                </p>
+            </div>
+            <div class="client_card">
+                <img src="images/extrab.jpg" alt="client">
+                <p>
+                    I dcgvscx askdgcva skcgfiahs dcoasdcygaoshc osuycga clausycfasildc cslaiduc
+                    gysc dlsayudcfa lieudcscb suycv sclwqsuyc cusycv scscv 
+                </p>
+            </div>
+            <div class="client_card">
+                <img src="images/extrab.jpg" alt="client">
+                <p>
+                    I dcgvscx askdgcva skcgfiahs dcoasdcygaoshc osuycga clausycfasildc cslaiduc
+                    gysc dlsayudcfa lieudcscb suycv sclwqsuyc cusycv scscv 
+                </p>
+            </div>
+            <div class="client_card">
+                <img src="images/extrab.jpg" alt="client">
+                <p>
+                    I dcgvscx askdgcva skcgfiahs dcoasdcygaoshc osuycga clausycfasildc cslaiduc
+                    gysc dlsayudcfa lieudcscb suycv sclwqsuyc cusycv scscv 
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sections_container">
+    <div class="reward_container">
+        <p>dcvs edfcws fswdev</p>
+        <h4>sfvsv werfwef wefwerf werf wefw efw ef wf</h4>
+        <button class="reward_btn">Join Rewards</button>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer_container">
+        <div class="footer_col">
+            <h3>UCA&Co</h3>
+            <p>
+                UCA&Co is a renowned agency that make brands and make them well known round the world
+            </p>
+            <p>
+                pishcbqy7c qlwcuygqs87ocy aqsdcoq8wdvyubgqwc qcwpoiqudcq scxqlcvxhqwsxc qowucyvc zc8yfswycvcxcf
+            </p>
+        </div>
+        <div class="footer_col">
+            <h4>Company</h4>
+            <p>About Us</p>
+            <p>Our Team</p>
+            <p>Blog</p>
+            <p>Book</p>
+            <p>Contact Us</p>
+        </div>
+        <div class="footer_col">
+            <h4>Legal</h4>
+            <p>FAQs</p>
+            <p>Terms And Conditions</p>
+            <p>Privacy Policy</p>
+        </div>
+        <div class="footer_col">
+            <h4>Resources</h4>
+            <p>Social Media</p>
+            <p>Help Center</p>
+            <p>Partnerships</p>
+        </div>
+    </div>
+    <div class="footer_bar">
+        Copyright 2025 Elisha's Proect. All rights reserved.
+    </div>
+</footer>
+</body>
+</html>

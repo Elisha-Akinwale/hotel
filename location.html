@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="content flex_space">
+
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+            
+            <div class="navlinks">
+                <ul id="menulist">
+                    <i class="ri-menu-line" id="hide" onclick="hideMenu()"></i>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="restaurant.html">Restaurant</a></li>
+                    <li><div class="active_nav"><a href="location.html">Location</a></div></li>
+                    <li><i class="ri-search-line"></i></li>
+                    <li><button class="primary-btn"><a href="rooms.html"> BOOK NOW</a></button></li>
+                </ul>
+                <i class="ri-menu-line" id="show" onclick="showMenu()"></i>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        const menulist = document.getElementById("menulist")
+        const show = document.getElementById("show")
+        const hide = document.getElementById("hide")
+
+        show.addEventListener('click', () => menulist.style.display = "block" , menulist.style.top = "0")
+        hide.addEventListener('click', () => menulist.style.display = "none")
+    </script>
+</body>
+</html>

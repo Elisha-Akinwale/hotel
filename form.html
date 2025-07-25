@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+ <form name="booking" method="POST" data-netlify="true" class="max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md space-y-4">
+  <input type="hidden" name="form-name" value="booking">
+
+  <h2 class="text-2xl font-semibold text-center">Book Your Stay</h2>
+
+  <div class="gawdd"><label class="block">
+    Full Name:
+    <input type="text" name="name" required class="w-full border rounded p-2 mt-1">
+  </label>
+
+  <label class="block">
+    Email:
+    <input type="email" name="email" required class="w-full border rounded p-2 mt-1">
+  </label>
+
+  <div class="grid-cols-2">
+    <label class="block">
+      Check-in:
+      <input type="date" name="checkin" required class="w-full border rounded p-2 mt-1">
+    </label>
+
+    <label class="block">
+      Check-out:
+      <input type="date" name="checkout" required class="w-full border rounded p-2 mt-1">
+    </label>
+  </div>
+
+  <label class="block">
+    Guests:
+    <input type="number" name="guests" min="1" required class="w-full border rounded p-2 mt-1">
+  </label>
+  
+  <label class="block">
+    Guests:
+    <input type="number" name="guests" min="1" required class="w-full border rounded p-2 mt-1">
+  </label>
+
+</div>
+
+  <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded">Submit Booking</button>
+</form>
+   
+</body>
+</html>
