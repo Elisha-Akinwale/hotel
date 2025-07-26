@@ -51,33 +51,32 @@
             <p>Make your reservations fast and easy</p>
         </div>
         <div class="booking_container">
-            <form name="contact" netlify method="POST" class="max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md space-y-4">
-            <input type="hidden" name="form-name" value="booking">
-              
+            <form name="booking" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="booking">              
                 <div class="form_group">
                     <div class="input_group">
-                        <input type="text">
+                        <input type="text" name="name" required>
                         <label>Your Name</label>
                     </div>
                     <p>Guest Name</p>
                 </div>
                 <div class="form_group">
                     <div class="input_group">
-                        <input type="date">
+                        <input type="date" name="check-in" required>
                         <label></label>
                     </div>
                     <p>Check In</p>
                 </div>
                 <div class="form_group">
                     <div class="input_group">
-                        <input type="date">
+                        <input type="date" name="check-out" required>
                         <label></label>
                     </div>
                     <p>Check Out</p>
                 </div>
                 <div class="form_group">
                     <div class="input_group">
-                        <input type="number" min="1">
+                        <input type="number" min="1" name="guests" required>
                         <label>Guests</label>
                     </div>
                     <p>Add guests</p>
