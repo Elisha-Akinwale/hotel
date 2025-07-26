@@ -512,9 +512,13 @@ header .navlinks i{
 }
 
 @media (width < 800px){
+    .booking_container{
+        width: calc(100% - 3rem);
+    }
+    
     .booking_container form{
         grid-template-columns: repeat(2, 1fr);
-         width: calc(100% - 3rem);
+         
     }
 
     .popular_grid{
