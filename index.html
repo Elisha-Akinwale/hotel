@@ -51,8 +51,9 @@
             <p>Make your reservations fast and easy</p>
         </div>
         <div class="booking_container">
-            <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
-                <input type="hidden" name="form-name" value="booking">              
+            <form name="booking" method="POST" data-netlify="true" onSubmit="submit">
+                <input type="hidden" name="form-name" value="booking">
+                <input type="hidden" name="redirect" value="/rooms.html">
                 <div class="form_group">
                     <div class="input_group">
                         <input type="text" name="name" required>
