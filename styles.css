@@ -515,6 +515,12 @@ header .navlinks i{
     color: var(--text-light);
 }
 
+.footer_col p i{
+    font-size: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 .footer_col a:hover{
     border-bottom: 1px solid var(--text-dark);
 }
