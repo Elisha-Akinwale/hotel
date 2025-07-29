@@ -20,7 +20,7 @@
             
             <div class="navlinks">
                 <ul id="menulist">
-                    <i class="ri-menu-line" onclick="hideMenu()"></i>
+                    <i class="ri-close-line" onclick="hideMenu()"></i>
                     <li><div class="active_nav"><a href="index.html">Home</a></div></li>
                     <li><a href="rooms.html">Rooms</a></li>
                     <li><a href="restaurant.html">Restaurant</a></li>
@@ -45,8 +45,8 @@
 <header class="section_container header_container">
     <div class="header_image_container">
         <div class="header_content">
-            <h1>Enjoy your Staycation</h1>
-            <p>Make your reservations fast and easy</p>
+            <h1>Enjoy your Stay</h1>
+            <p>Make your reservations fast</p>
         </div>
         <div class="booking_container">
             <form name="booking" method="POST" data-netlify="true" action="/rooms.html">
@@ -60,14 +60,14 @@
                 </div>
                 <div class="form_group">
                     <div class="input_group">
-                        <input type="date" name="check-in" required id="checkin">
+                        <input type="date" name="checkin" required id="checkin">
                         <label></label>
                     </div>
                     <p>Check In</p>
                 </div>
                 <div class="form_group">
                     <div class="input_group">
-                        <input type="date" name="check-out" required id="checkout">
+                        <input type="date" name="checkout" required id="checkout">
                         <label></label>
                     </div>
                     <p>Check Out</p>
@@ -79,7 +79,7 @@
                     </div>
                     <p>Add guests</p>
                 </div>
-            <button type="submit" class="btn" ><a href="rooms.html"><i class="ri-search-line"></i></a></button>
+            <button type="submit" class="btn" ><!--<a href="rooms.html">--><i class="ri-search-line"></i></a></button>
             </form>
         </div>
     </div>
@@ -93,7 +93,7 @@
 </header>
 
 <section class="section_container popular_container">
-    <h2 class="section_header"><a href="restaurant.html"> Our Rooms</a></h2>
+    <h2 class="section_header"><a href="rooms.html"> Our Rooms</a></h2>
     <div class="popular_grid">
 
         <div class="popular_card">
@@ -458,13 +458,12 @@
         </div>
         <div class="footer_col">
             <h4>Resources</h4>
-            <p>Social Media</p>
-            <p>Help Center</p>
-            <p>Partnerships</p>
+            <p><a href="www.google.com"><i class="ri-whatsapp-line"></i></a><a href="https://instagram.com"><i class="ri-instagram-line"></i></a></p>
+            <p><i class="ri-customer-service-line"></i></p>
         </div>
     </div>
     <div class="footer_bar">
-        Copyright 2025 Elisha's Proect. All rights reserved.
+        Copyright 2025 Elisha's Project. All rights reserved.
     </div>
 </footer>
 </body>
