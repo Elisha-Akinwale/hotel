@@ -25,8 +25,6 @@
                     <li><a href="rooms.html">Rooms</a></li>
                     <li><a href="restaurant.html">Restaurant</a></li>
                     <li><a href="location.html">Location</a></li>
-                    <li><i class="ri-search-line"></i></li>
-                    <li><button class="primary-btn"><a href="rooms.html">BOOK NOW</a> </button></li>
                 </ul>
                 <i class="ri-menu-line" onclick="showMenu()"></i>
             </div>
@@ -47,12 +45,12 @@
 <header class="section_container header_container">
     <div class="header_image_container">
         <div class="header_content">
-            <h1>Enoy your Vacation</h1>
+            <h1>Enjoy your Staycation</h1>
             <p>Make your reservations fast and easy</p>
         </div>
         <div class="booking_container">
-            <form name="booking" method="POST" data-netlify="true" action="/rooms">
-                <input type="hidden" name="form-name" value="booking">
+            <form name="booking" method="POST" data-netlify="true" onSubmit="submit">
+                <input type="hidden" name="form-name" value="booking">              
                 <div class="form_group">
                     <div class="input_group">
                         <input type="text" name="name" required>
@@ -62,14 +60,14 @@
                 </div>
                 <div class="form_group">
                     <div class="input_group">
-                        <input type="date" name="checkin" required>
+                        <input type="date" name="check-in" required id="checkin">
                         <label></label>
                     </div>
                     <p>Check In</p>
                 </div>
                 <div class="form_group">
                     <div class="input_group">
-                        <input type="date" name="checkout" required>
+                        <input type="date" name="check-out" required id="checkout">
                         <label></label>
                     </div>
                     <p>Check Out</p>
@@ -81,82 +79,303 @@
                     </div>
                     <p>Add guests</p>
                 </div>
-                <button type="submit" class="btn" ><!--<a href="rooms.html">--><i class="ri-search-line"></i></a></button>
+            <button type="submit" class="btn" ><a href="rooms.html"><i class="ri-search-line"></i></a></button>
             </form>
-            
         </div>
     </div>
-    <script>
-  document.querySelector("form").addEventListener("submit", function () {
-    alert("Form is submitting!");
-  });
-</script>
 
+    <script>
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById("checkin").min = today;
+        document.getElementById("checkout").min = today;
+    </script>
+    
 </header>
 
 <section class="section_container popular_container">
     <h2 class="section_header"><a href="restaurant.html"> Our Rooms</a></h2>
     <div class="popular_grid">
+
         <div class="popular_card">
-            <img src="images/menub.jpg" alt="popular hotel"/>
+
+            <div class="container">
+
+            <div class="wrapper">
+
+                <img src="images/menub.jpg">
+
+                <img src="images/extrab.jpg">
+
+                <img src="images/extrabb.jpg">
+
+                <img src="images/menub.jpg">
+
+            </div>
+
+            </div>
+
             <div class="popular_content">
+
                 <div class="popular_card_header">
+
                     <h4>The Presidential Suite</h4>
+
                     <h4>$499</h4>
+
                 </div>
-                <p>New York City, USA</p>
+
+                <p><ul class="lists">
+
+                    <li>A/C</li>
+
+                    <li>Wifi</li>
+
+                    <li>Spa</li>
+
+                    <li>Bath tub</li>
+
+                </ul></p>
+
+
             </div>
+
         </div>
+
+
+
         <div class="popular_card">
-            <img src="images/extrab.jpg" alt="popular hotel">
-            <div class="popular_content">
-                <div class="popular_card_header">
-                    <h4>The Plaza Hotel</h4>
-                    <h4>$499</h4>
-                </div>
-                <p>New York City, USA</p>
+
+            <div class="container">
+
+            <div class="wrapper">
+
+                <img src="images/menub.jpg">
+
+                <img src="images/extrab.jpg">
+
+                <img src="images/extrabb.jpg">
+
+                <img src="images/menub.jpg">
+
             </div>
+
+            </div>
+
+            <div class="popular_content">
+
+                <div class="popular_card_header">
+
+                    <h4>The Conjugal Suite</h4>
+
+                    <h4>$499</h4>
+
+                </div>
+
+                <p><ul class="lists">
+
+                    <li>A/C</li>
+
+                    <li>Wifi</li>
+
+                    <li>Spa</li>
+
+                    <li>Bath tub</li>
+
+                </ul></p>
+
+
+            </div>
+
         </div>
+
+
+
         <div class="popular_card">
-            <img src="images/menub.jpg" alt="popular hotel">
-            <div class="popular_content">
-                <div class="popular_card_header">
-                    <h4>The Plaza Hotel</h4>
-                    <h4>$499</h4>
-                </div>
-                <p>New York City, USA</p>
+
+            <div class="container">
+
+            <div class="wrapper">
+
+                <img src="images/menub.jpg">
+
+                <img src="images/extrab.jpg">
+
+                <img src="images/extrabb.jpg">
+
+                <img src="images/menub.jpg">
+
             </div>
+
+            </div>
+
+            <div class="popular_content">
+
+                <div class="popular_card_header">
+
+                    <h4>The Business Executive</h4>
+
+                    <h4>$499</h4>
+
+                </div>
+
+                <p><ul class="lists">
+
+                    <li>A/C</li>
+
+                    <li>Wifi</li>
+
+                    <li>Spa</li>
+
+                    <li>Bath tub</li>
+
+                </ul></p>
+
+
+            </div>
+
         </div>
+
+
+
         <div class="popular_card">
-            <img src="images/menub.jpg" alt="popular hotel">
-            <div class="popular_content">
-                <div class="popular_card_header">
-                    <h4>The Plaza Hotel</h4>
-                    <h4>$499</h4>
-                </div>
-                <p>New York City, USA</p>
+
+            <div class="container">
+
+            <div class="wrapper">
+
+                <img src="images/menub.jpg">
+
+                <img src="images/extrab.jpg">
+
+                <img src="images/extrabb.jpg">
+
+                <img src="images/menub.jpg">
+
             </div>
+
+            </div>
+
+            <div class="popular_content">
+
+                <div class="popular_card_header">
+
+                    <h4>The Executive</h4>
+
+                    <h4>$499</h4>
+
+                </div>
+
+                <p><ul class="lists">
+
+                    <li>A/C</li>
+
+                    <li>Wifi</li>
+
+                    <li>Spa</li>
+
+                    <li>Bath tub</li>
+
+                </ul></p>
+
+
+            </div>
+
         </div>
+
+
+
         <div class="popular_card">
-            <img src="images/extrab.jpg" alt="popular hotel">
-            <div class="popular_content">
-                <div class="popular_card_header">
-                    <h4>The Plaza Hotel</h4>
-                    <h4>$499</h4>
-                </div>
-                <p>New York City, USA</p>
+
+            <div class="container">
+
+            <div class="wrapper">
+
+                <img src="images/menub.jpg">
+
+                <img src="images/extrab.jpg">
+
+                <img src="images/extrabb.jpg">
+
+                <img src="images/menub.jpg">
+
             </div>
+
+            </div>
+
+            <div class="popular_content">
+
+                <div class="popular_card_header">
+
+                    <h4>The Commercial</h4>
+
+                    <h4>$499</h4>
+
+                </div>
+
+                <p><ul class="lists">
+
+                    <li>A/C</li>
+
+                    <li>Wifi</li>
+
+                    <li>Spa</li>
+
+                    <li>Bath tub</li>
+
+                </ul></p>
+
+
+            </div>
+
         </div>
+
+
+
         <div class="popular_card">
-            <img src="images/extrabb.jpg" alt="popular hotel">
-            <div class="popular_content">
-                <div class="popular_card_header">
-                    <h4>The Plaza Hotel</h4>
-                    <h4>$499</h4>
-                </div>
-                <p>New York City, USA</p>
+
+            <div class="container">
+
+            <div class="wrapper">
+
+                <img src="images/menub.jpg">
+
+                <img src="images/extrab.jpg">
+
+                <img src="images/extrabb.jpg">
+
+                <img src="images/menub.jpg">
+
             </div>
+
+            </div>
+
+            <div class="popular_content">
+
+                <div class="popular_card_header">
+
+                    <h4>The Executive</h4>
+
+                    <h4>$499</h4>
+
+                </div>
+
+                <p><ul class="lists">
+
+                    <li>A/C</li>
+
+                    <li>Wifi</li>
+
+                    <li>Spa</li>
+
+                    <li>Bath tub</li>
+
+                </ul></p>
+
+
+            </div>
+
         </div>
+
     </div>
 </section>
 
@@ -167,43 +386,37 @@
             <div class="client_card">
                 <img src="images/extrab.jpg" alt="client">
                 <p>
-                    I dcgvscx askdgcva skcgfiahs dcoasdcygaoshc osuycga clausycfasildc cslaiduc
-                    gysc dlsayudcfa lieudcscb suycv sclwqsuyc cusycv scscv 
+                    I spent two nights at this place and the experience was amazing. 100% worth the price
                 </p>
             </div>
             <div class="client_card">
                 <img src="images/extrab.jpg" alt="client">
                 <p>
-                    I dcgvscx askdgcva skcgfiahs dcoasdcygaoshc osuycga clausycfasildc cslaiduc
-                    gysc dlsayudcfa lieudcscb suycv sclwqsuyc cusycv scscv 
+                    The place is really nice, really enjoyed my stay
                 </p>
             </div>
             <div class="client_card">
                 <img src="images/extrab.jpg" alt="client">
                 <p>
-                    I dcgvscx askdgcva skcgfiahs dcoasdcygaoshc osuycga clausycfasildc cslaiduc
-                    gysc dlsayudcfa lieudcscb suycv sclwqsuyc cusycv scscv 
+                    The place is not actually bad but make sure you pay more attention to the facilities
                 </p>
             </div>
             <div class="client_card">
                 <img src="images/extrab.jpg" alt="client">
                 <p>
-                    I dcgvscx askdgcva skcgfiahs dcoasdcygaoshc osuycga clausycfasildc cslaiduc
-                    gysc dlsayudcfa lieudcscb suycv sclwqsuyc cusycv scscv 
+                    Utmost security and it is just really amazing, has everything they advertised
                 </p>
             </div>
             <div class="client_card">
                 <img src="images/extrab.jpg" alt="client">
                 <p>
-                    I dcgvscx askdgcva skcgfiahs dcoasdcygaoshc osuycga clausycfasildc cslaiduc
-                    gysc dlsayudcfa lieudcscb suycv sclwqsuyc cusycv scscv 
+                    Looking forward to coming here anytime I'm in town
                 </p>
             </div>
             <div class="client_card">
                 <img src="images/extrab.jpg" alt="client">
                 <p>
-                    I dcgvscx askdgcva skcgfiahs dcoasdcygaoshc osuycga clausycfasildc cslaiduc
-                    gysc dlsayudcfa lieudcscb suycv sclwqsuyc cusycv scscv 
+                    My go-to home away from home
                 </p>
             </div>
         </div>
@@ -212,13 +425,13 @@
 
 <section class="sections_container">
     <div class="reward_container">
-        <p>dcvs edfcws fswdev</p>
-        <h4>sfvsv werfwef wefwerf werf wefw efw ef wf</h4>
-        <button class="reward_btn">Join Rewards</button>
+        <p>For enquiries</p>
+        <h4>For more enquiries on our establishment</h4>
+        <button class="reward_btn"><a href="#foot">Learn More</a> </button>
     </div>
 </section>
 
-<footer class="footer">
+<footer class="footer" id="foot">
     <div class="footer_container">
         <div class="footer_col">
             <h3>UCA&Co</h3>
@@ -226,22 +439,22 @@
                 UCA&Co is a renowned agency that make brands and make them well known round the world
             </p>
             <p>
-                pishcbqy7c qlwcuygqs87ocy aqsdcoq8wdvyubgqwc qcwpoiqudcq scxqlcvxhqwsxc qowucyvc zc8yfswycvcxcf
+                We provide everything needed for a brand to go digital and known, be it websites, designs, logos, we've got you covered
             </p>
         </div>
         <div class="footer_col">
             <h4>Company</h4>
-            <p>About Us</p>
-            <p>Our Team</p>
-            <p>Blog</p>
-            <p>Book</p>
-            <p>Contact Us</p>
+            <p><a href="about.html">About Us</a></p>
+            <p><a href="team.html">Our Team</a></p>
+            <p><a href="blog.html">Blog</a> </p>
+            <p><a href="book.html">Book</a> </p>
+            <p><a href="contact.html">Contact Us</a> </p>
         </div>
         <div class="footer_col">
             <h4>Legal</h4>
-            <p>FAQs</p>
-            <p>Terms And Conditions</p>
-            <p>Privacy Policy</p>
+            <p><a href="faq.html">FAQs</a> </p>
+            <p><a href="terms.html">Terms And Conditions</a> </p>
+            <p><a href="privacy.html">Privacy Policy</a> </p>
         </div>
         <div class="footer_col">
             <h4>Resources</h4>
