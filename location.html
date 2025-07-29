@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
@@ -17,13 +20,11 @@
             
             <div class="navlinks">
                 <ul id="menulist">
-                    <i class="ri-menu-line" id="hide" onclick="hideMenu()"></i>
+                    <i class="ri-close-line" id="hide" onclick="hideMenu()"></i>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="rooms.html">Rooms</a></li>
                     <li><a href="restaurant.html">Restaurant</a></li>
                     <li><div class="active_nav"><a href="location.html">Location</a></div></li>
-                    <li><i class="ri-search-line"></i></li>
-                    <li><button class="primary-btn"><a href="rooms.html"> BOOK NOW</a></button></li>
                 </ul>
                 <i class="ri-menu-line" id="show" onclick="showMenu()"></i>
             </div>
@@ -38,5 +39,45 @@
         show.addEventListener('click', () => menulist.style.display = "block" , menulist.style.top = "0")
         hide.addEventListener('click', () => menulist.style.display = "none")
     </script>
+
+<header class="section_container location_container">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31653.08711653517!2d3.8346574343365347!3d7.394632971201817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398c86a5f687e5%3A0xaceae92311d442b0!2sGovernment%20College%20Ibadan!5e0!3m2!1sen!2sng!4v1753781343443!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</header>
+
+<footer class="footer" id="foot">
+    <div class="footer_container">
+        <div class="footer_col">
+            <h3>UCA&Co</h3>
+            <p>
+                UCA&Co is a renowned agency that make brands and make them well known round the world
+            </p>
+            <p>
+                We provide everything needed for a brand to go digital and known, be it websites, designs, logos, we've got you covered
+            </p>
+        </div>
+        <div class="footer_col">
+            <h4>Company</h4>
+            <p><a href="about.html">About Us</a></p>
+            <p><a href="team.html">Our Team</a></p>
+            <p><a href="blog.html">Blog</a> </p>
+            <p><a href="book.html">Book</a> </p>
+            <p><a href="contact.html">Contact Us</a> </p>
+        </div>
+        <div class="footer_col">
+            <h4>Legal</h4>
+            <p><a href="faq.html">FAQs</a> </p>
+            <p><a href="terms.html">Terms And Conditions</a> </p>
+            <p><a href="privacy.html">Privacy Policy</a> </p>
+        </div>
+        <div class="footer_col">
+            <h4>Resources</h4>
+            <p><a href="www.google.com"><i class="ri-whatsapp-line"></i></a><a href="https://instagram.com"><i class="ri-instagram-line"></i></a></p>
+            <p><i class="ri-customer-service-line"></i></p>
+        </div>
+    </div>
+    <div class="footer_bar">
+        Copyright 2025 Elisha's Proect. All rights reserved.
+    </div>
+</footer>
 </body>
 </html>
