@@ -515,7 +515,7 @@ header .navlinks i{
     color: var(--text-light);
 }
 
-.footer_col p i{
+.footer_col p a i{
     font-size: 30px;
     margin-right: 10px;
     cursor: pointer;
