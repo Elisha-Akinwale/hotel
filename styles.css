@@ -390,6 +390,7 @@ header .navlinks i{
     justify-content: space-between;
     gap: 1rem;
     margin-bottom: 0.5rem;
+    font-family: "Bodoni Moda SC" !important;
 }
 
 .popular_card_header h4{
