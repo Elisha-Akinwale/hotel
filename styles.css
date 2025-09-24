@@ -20,7 +20,7 @@ html{
 }
 
 body{
-    font-family: Bodoni sans-serif;
+    font-family: 'Bodoni' sans-serif;
 }
 
 h1,h2{
@@ -213,6 +213,7 @@ header .navlinks i{
     line-height: 4rem;
     font-weight: 600;
     color: #9e9ea7;
+    font-family: Bodoni !important;
 }
 
 .header_container p{
