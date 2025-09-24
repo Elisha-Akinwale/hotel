@@ -20,7 +20,7 @@ html{
 }
 
 body{
-    font-family: Poppins sans-serif;
+    font-family: Bodoni sans-serif;
 }
 
 h1,h2{
@@ -212,7 +212,7 @@ header .navlinks i{
     font-size: 3.5rem;
     line-height: 4rem;
     font-weight: 600;
-    color: var(--white);
+    color: #9e9ea7;
 }
 
 .header_container p{
