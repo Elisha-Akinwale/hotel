@@ -10,7 +10,7 @@
 
 html{
     scroll-behavior: smooth;
-    font-family: 'Bodoni Moda' serif;
+    font-family: 'Bodoni Moda SC', cursive serif;
 }
 
 *{
@@ -20,7 +20,7 @@ html{
 }
 
 body{
-    font-family: 'Bodoni Moda' sans-serif;
+    font-family: 'Bodoni Moda SC' sans-serif;
 }
 
 h1,h2{
@@ -212,8 +212,8 @@ header .navlinks i{
     font-size: 3.5rem;
     line-height: 4rem;
     font-weight: 400;
-    color: #9e9ea7;
-    font-family: "Bodoni Moda SC";
+    color: whitesmoke;
+    font-family: "Sevillana", cursive;
     font-style: normal;
 }
 
