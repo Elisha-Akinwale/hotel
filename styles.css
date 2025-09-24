@@ -211,9 +211,10 @@ header .navlinks i{
     margin-bottom: 1rem;
     font-size: 3.5rem;
     line-height: 4rem;
-    font-weight: 600;
+    font-weight: 400;
     color: #9e9ea7;
-    font-fmily: Bodoni;
+    font-family: "Sevillana", cursive;
+    font-style: normal;
 }
 
 .header_container p{
